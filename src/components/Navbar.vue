@@ -1,5 +1,7 @@
 <template>
-  <div class="header">
+  <div class="header"
+       :class="{active:isActive}"
+       @scroll.native="toFixedHeader">
     <b-container>
       <b-navbar class="navbar-inverse"
                 toggleable="lg"
@@ -35,7 +37,26 @@
 
 <script>
 export default {
-  name: 'navbar'
+  name: 'navbar',
+  data () {
+    return {
+      isActive: false
+    }
+  },
+  mounted () {
+    //监听滚动事件
+    window.addEventListener('scroll', this.toFixedHeader, true);
+  },
+  methods: {
+    toFixedHeader () {
+      let scrollTop = document.documentElement.scrollTop
+      if (scrollTop >= 100) {
+        this.isActive = true;
+      } else {
+        this.isActive = false;
+      }
+    }
+  }
 }
 </script>
 

@@ -1,52 +1,43 @@
 <template>
   <div>
     <navbar />
-    <section class="cd-hero">
-      <ul class="cd-hero-slider autoplay">
-        <li class="selected first-slide">
-          <div class="cd-full-width">
-            <div class="tm-slide-content-div slide-caption">
-              <span>Introduction to</span>
-              <h2>Creative Meteor</h2>
-              <p>Phasellus interdum tortor sem. Quisque sit amet condimentum sem. Phasellus luctus, felis sit amet
-                pulvinar luctus.</p>
-              <div class="primary-button">
-                <a href="#"
-                   class="scroll-link"
-                   data-id="about">Discover More</a>
-              </div>
-            </div>
-          </div> <!-- .cd-full-width -->
-        </li>
-
-        <li class="second-slide">
-          <div class="cd-full-width">
-            <div class="tm-slide-content-div slide-caption">
-              <span>We Are Perfect Staffs</span>
-              <h2>Our Team Members</h2>
-              <p>Donec dolor ipsum, laoreet nec metus non, tempus elementum massa. Donec non elit rhoncus, vestibulum enim
-                sed, rutrum arcu.</p>
-              <div class="primary-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div> <!-- .cd-full-width -->
-        </li>
-
-        <li class="third-slide">
-          <div class="cd-full-width">
-            <div class="tm-slide-content-div slide-caption">
-              <span>Design is a hobby</span>
-              <h2>Responsive Layout</h2>
-              <p>Integer ut dolor eget magna congue gravida ut at arcu. Vivamus maximus neque quis luctus tempus.
-                Vestibulum consequat.</p>
-              <div class="primary-button">
-                <a href="#">View Details</a>
-              </div>
-            </div>
-          </div> <!-- .cd-full-width -->
-        </li>
-      </ul> <!-- .cd-hero-slider -->
+    <section class="my-hero">
+      <b-carousel v-model="slide"
+                  :interval="4000"
+                  indicators
+                  class="my-hero-slider"
+                  @sliding-start="onSlideStart"
+                  @sliding-end="onSlideEnd">
+        <!-- Text slides with image -->
+        <b-carousel-slide img-src="../assets/img/slide_01.jpg">
+          <span>Introduction to</span>
+          <h2>Creative Meteor</h2>
+          <p>Phasellus interdum tortor sem. Quisque sit amet condimentum sem. Phasellus luctus, felis sit amet
+            pulvinar luctus.</p>
+          <div class="primary-button">
+            <a href="#"
+               class="scroll-link">Discover More</a>
+          </div>
+        </b-carousel-slide>
+        <b-carousel-slide img-src="../assets/img/slide_02.jpg">
+          <span>We Are Perfect Staffs</span>
+          <h2>Our Team Members</h2>
+          <p>Donec dolor ipsum, laoreet nec metus non, tempus elementum massa. Donec non elit rhoncus, vestibulum enim
+            sed, rutrum arcu.</p>
+          <div class="primary-button">
+            <a href="#">Read More</a>
+          </div>
+        </b-carousel-slide>
+        <b-carousel-slide img-src="../assets/img/slide_03.jpg">
+          <span>Design is a hobby</span>
+          <h2>Responsive Layout</h2>
+          <p>Integer ut dolor eget magna congue gravida ut at arcu. Vivamus maximus neque quis luctus tempus.
+            Vestibulum consequat.</p>
+          <div class="primary-button">
+            <a href="#">View Details</a>
+          </div>
+        </b-carousel-slide>
+      </b-carousel>
     </section>
 
     <div id="about"
@@ -149,129 +140,191 @@
             </div>
           </b-col>
         </b-row>
-        <div class="projects-holder-3">
-          <div class="filter-categories">
-            <ul class="project-filter">
-              <li class="filter"
-                  data-filter="all"><span>All</span></li>
-              <li class="filter"
-                  data-filter="nature"><span>Nature</span></li>
-              <li class="filter"
-                  data-filter="workspace"><span>Workspace</span></li>
-              <li class="filter"
-                  data-filter="city"><span>City</span></li>
-              <li class="filter"
-                  data-filter="technology"><span>Technology</span></li>
-            </ul>
-          </div>
-          <div class="projects-holder">
-            <b-row>
-              <div md="3"
-                   sm="6"
-                   class="project-item mix workspace">
-                <div class="thumb">
-                  <div class="image">
-                    <img src="../assets/img/portfolio_01.jpg">
+        <div class="filter-categories">
+          <b-tabs content-class="mt-3"
+                  align="center">
+            <b-tab title="All"
+                   active>
+              <b-row>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_01.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_01.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                  <div class="hover-effect">
-                    <a href="../assets/img/portfolio_big_01.jpg"
-                       data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_02.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_02.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div md="3"
-                   sm="6"
-                   class="project-item mix workspace">
-                <div class="thumb">
-                  <div class="image">
-                    <img src="../assets/img/portfolio_02.jpg">
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_03.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_03.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                  <div class="hover-effect">
-                    <a href="../assets/img/portfolio_big_02.jpg"
-                       data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_04.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_04.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div md="3"
-                   sm="6"
-                   class="project-item mix technology">
-                <div class="thumb">
-                  <div class="image">
-                    <img src="../assets/img/portfolio_03.jpg">
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_05.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_05.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                  <div class="hover-effect">
-                    <a href="../assets/img/portfolio_big_03.jpg"
-                       data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_06.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_06.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div md="3"
-                   sm="6"
-                   class="project-item mix city">
-                <div class="thumb">
-                  <div class="image">
-                    <img src="../assets/img/portfolio_04.jpg">
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_07.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_07.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                  <div class="hover-effect">
-                    <a href="../assets/img/portfolio_big_04.jpg"
-                       data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_08.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_08.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div md="3"
-                   sm="6"
-                   class="project-item mix nature">
-                <div class="thumb">
-                  <div class="image">
-                    <img src="../assets/img/portfolio_05.jpg">
+                </b-col>
+              </b-row>
+            </b-tab>
+            <b-tab title="Nature">
+              <b-row>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_05.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_05.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                  <div class="hover-effect">
-                    <a href="../assets/img/portfolio_big_05.jpg"
-                       data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                </b-col>
+              </b-row>
+            </b-tab>
+            <b-tab title="Workspace">
+              <b-row>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_01.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_01.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div md="3"
-                   sm="6"
-                   class="project-item mix technology">
-                <div class="thumb">
-                  <div class="image">
-                    <img src="../assets/img/portfolio_06.jpg">
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_02.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_02.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                  <div class="hover-effect">
-                    <a href="../assets/img/portfolio_big_06.jpg"
-                       data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_08.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_08.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div md="3"
-                   sm="6"
-                   class="project-item mix workspace">
-                <div class="thumb">
-                  <div class="image">
-                    <img src="../assets/img/portfolio_07.jpg">
+                </b-col>
+              </b-row>
+            </b-tab>
+            <b-tab title="City">
+              <b-row>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_08.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_08.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                  <div class="hover-effect">
-                    <a href="../assets/img/portfolio_big_07.jpg"
-                       data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_04.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_04.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div md="3"
-                   sm="6"
-                   class="project-item mix city">
-                <div class="thumb">
-                  <div class="image">
-                    <img src="../assets/img/portfolio_08.jpg">
+                </b-col>
+              </b-row>
+            </b-tab>
+            <b-tab title="Technology">
+              <b-row>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_05.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_05.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                  <div class="hover-effect">
-                    <a href="../assets/img/portfolio_big_08.jpg"
-                       data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                </b-col>
+                <b-col class="col-md-3 col-sm-6 project-item">
+                  <div class="thumb">
+                    <div class="image">
+                      <img src="../assets/img/portfolio_07.jpg">
+                    </div>
+                    <div class="hover-effect">
+                      <a href="../assets/img/portfolio_big_07.jpg"><i class="fa fa-search"></i></a>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </b-row>
-          </div>
+                </b-col>
+              </b-row>
+            </b-tab>
+          </b-tabs>
         </div>
       </b-container>
     </div>
@@ -475,6 +528,19 @@ export default {
   components: {
     navbar,
     footers
+  },
+  data () {
+    return {
+      slide: 0,
+    }
+  },
+  methods: {
+    onSlideStart () {
+      this.sliding = true
+    },
+    onSlideEnd () {
+      this.sliding = false
+    }
   }
 };
 </script>
