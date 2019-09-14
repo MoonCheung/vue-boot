@@ -121,8 +121,9 @@
           </b-col>
           <b-col md="6">
             <div class="right-image">
-              <img src="../assets/img/what-we-do-right-image.png"
-                   alt="图像">
+              <b-img src="../assets/img/what-we-do-right-image.png"
+                     alt="图像"
+                     fluid></b-img>
             </div>
           </b-col>
         </b-row>
@@ -146,83 +147,141 @@
             <b-tab title="All"
                    active>
               <b-row>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_01.jpg">
+                      <b-img src="../assets/img/portfolio_01.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_01.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" /></i></a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_02.jpg">
+                      <b-img src="../assets/img/portfolio_02.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_02.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_03.jpg">
+                      <b-img src="../assets/img/portfolio_03.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_03.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i>
+                      </a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_04.jpg">
+                      <b-img src="../assets/img/portfolio_04.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_04.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_05.jpg">
+                      <b-img src="../assets/img/portfolio_05.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_05.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_06.jpg">
+                      <b-img src="../assets/img/portfolio_06.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_06.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_07.jpg">
+                      <b-img src="../assets/img/portfolio_07.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_07.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i>
+                      </a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_08.jpg">
+                      <b-img src="../assets/img/portfolio_08.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_08.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i>
+                      </a>
                     </div>
                   </div>
                 </b-col>
@@ -230,13 +289,20 @@
             </b-tab>
             <b-tab title="Nature">
               <b-row>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_05.jpg">
+                      <b-img src="../assets/img/portfolio_05.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_05.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
@@ -244,33 +310,54 @@
             </b-tab>
             <b-tab title="Workspace">
               <b-row>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_01.jpg">
+                      <b-img src="../assets/img/portfolio_01.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_01.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_02.jpg">
+                      <b-img src="../assets/img/portfolio_02.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_02.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_08.jpg">
+                      <b-img src="../assets/img/portfolio_08.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_08.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
@@ -278,23 +365,37 @@
             </b-tab>
             <b-tab title="City">
               <b-row>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_08.jpg">
+                      <b-img src="../assets/img/portfolio_08.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_08.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_04.jpg">
+                      <b-img src="../assets/img/portfolio_04.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_04.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
@@ -302,23 +403,37 @@
             </b-tab>
             <b-tab title="Technology">
               <b-row>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_05.jpg">
+                      <b-img src="../assets/img/portfolio_05.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_05.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
-                <b-col class="col-md-3 col-sm-6 project-item">
+                <b-col md="3"
+                       sm="6"
+                       class="project-item">
                   <div class="thumb">
                     <div class="image">
-                      <img src="../assets/img/portfolio_07.jpg">
+                      <b-img src="../assets/img/portfolio_07.jpg"
+                             fluid></b-img>
                     </div>
                     <div class="hover-effect">
-                      <a href="../assets/img/portfolio_big_07.jpg"><i class="fa fa-search"></i></a>
+                      <a href="#">
+                        <i>
+                          <font-awesome-icon icon="search"
+                                             size="lg" />
+                        </i></a>
                     </div>
                   </div>
                 </b-col>
@@ -344,8 +459,9 @@
           <b-col md="6">
             <div class="blog-item b1">
               <div class="thumb">
-                <img src="../assets/img/blog_01.jpg"
-                     alt="">
+                <b-img src="../assets/img/blog_01.jpg"
+                       alt="图像"
+                       fluid></b-img>
                 <div class="text-content">
                   <h4>Delecioius Food Served</h4>
                   <span>Posted: <em>George</em> / Date: <em>11 Aug 2017</em> / Category: <em>Design</em></span>
@@ -358,8 +474,9 @@
               <b-col md="12">
                 <div class="blog-item second-blog b2">
                   <div class="thumb">
-                    <img src="../assets/img/blog_02.jpg"
-                         alt="">
+                    <b-img src="../assets/img/blog_02.jpg"
+                           alt="图像"
+                           fluid></b-img>
                     <div class="text-content">
                       <h4>Creative &amp; Clean Workspace</h4>
                       <span>Posted: <em>Kerley</em> / Date: <em>24 Jul 2017</em> / Category: <em>Artwork</em></span>
@@ -370,8 +487,9 @@
               <b-col md="12">
                 <div class="blog-item b3">
                   <div class="thumb">
-                    <img src="../assets/img/blog_03.jpg"
-                         alt="">
+                    <b-img src="../assets/img/blog_03.jpg"
+                           alt="图像"
+                           fluid></b-img>
                     <div class="text-content">
                       <h4>Crashed Plane Captured</h4>
                       <span>Posted: <em>Johnny</em> / Date: <em>16 Jul 2017</em> / Category: <em>Branding</em></span>
@@ -477,8 +595,8 @@
         <b-row>
           <b-col md="6">
             <div class="map">
-              <img src="../assets/img/map.jpg"
-                   alt="">
+              <b-img src="../assets/img/map.jpg"
+                     alt="图像"></b-img>
             </div>
           </b-col>
           <b-col md="6">

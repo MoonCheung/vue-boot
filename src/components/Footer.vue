@@ -13,19 +13,29 @@
           <div class="social-icons">
             <ul>
               <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i>
+                    <font-awesome-icon :icon="['fab','facebook-f']" />
+                  </i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i>
+                    <font-awesome-icon :icon="['fab','twitter']" />
+                  </i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i>
+                    <font-awesome-icon :icon="['fab','linkedin-in']" />
+                  </i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-rss"></i></a>
+                <a href="#"><i>
+                    <font-awesome-icon :icon="['fa','rss']" />
+                  </i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i>
+                    <font-awesome-icon :icon="['fab','dribbble']" />
+                  </i></a>
               </li>
             </ul>
           </div>
