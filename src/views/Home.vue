@@ -641,6 +641,8 @@
 <script>
 import navbar from '@/components/Navbar'
 import footers from '@/components/Footer'
+import $ from 'jquery'
+
 export default {
   name: "home",
   components: {
@@ -652,12 +654,33 @@ export default {
       slide: 0,
     }
   },
+  mounted () {
+    this.countNums();
+  },
   methods: {
     onSlideStart () {
       this.sliding = true
     },
     onSlideEnd () {
       this.sliding = false
+    },
+    countNums () {
+      $('.counter').each(function () {
+        let self = $(this);
+        let countTo = self.attr('data-count')
+        $({ countNum: self.text() }).animate({
+          countNum: countTo
+        }, {
+            duration: 8000,
+            easing: 'linear',
+            step: function () {
+              self.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              self.text(this.countNum);
+            }
+          })
+      })
     }
   }
 };
