@@ -1,12 +1,3 @@
-/*
- * @Description: eslint配置文件
- * @Author: MoonCheung
- * @Github: https://github.com/MoonCheung
- * @Date: 2019-09-07 16:09:55
- * @LastEditors: MoonCheung
- * @LastEditTime: 2019-09-07 16:20:56
- */
-
 module.exports = {
   root: true,
   env: {

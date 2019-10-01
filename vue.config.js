@@ -1,12 +1,3 @@
-/*
- * @Description: vue 配置文件
- * @Author: MoonCheung
- * @Github: https://github.com/MoonCheung
- * @Date: 2019-09-07 16:15:35
- * @LastEditors: MoonCheung
- * @LastEditTime: 2019-09-15 21:43:00
- */
-
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const path = require('path');
 

@@ -4,7 +4,7 @@
  * @Github: https://github.com/MoonCheung
  * @Date: 2019-09-07 16:09:55
  * @LastEditors: MoonCheung
- * @LastEditTime: 2019-09-15 10:10:15
+ * @LastEditTime: 2019-09-26 23:28:21
  */
 
 import Vue from "vue";
@@ -19,7 +19,7 @@ export default new Router({
       path: "/",
       name: "home",
       component: () => import('@/views/Home.vue')
-    },
+    }
     // {
     // path: "/about",
     // name: "about",

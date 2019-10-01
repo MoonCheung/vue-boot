@@ -1,12 +1,3 @@
-/*
- * @Description: 入口
- * @Author: MoonCheung
- * @Github: https://github.com/MoonCheung
- * @Date: 2019-09-07 16:09:55
- * @LastEditors: MoonCheung
- * @LastEditTime: 2019-09-15 14:51:38
- */
-
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
